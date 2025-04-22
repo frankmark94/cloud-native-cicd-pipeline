@@ -2,6 +2,9 @@
 
 This project demonstrates a fully automated CI/CD pipeline that deploys a microservices-based application onto a Kubernetes cluster. It leverages containerization with Docker, automates tests, performs vulnerability scanning, and implements Kubernetes deployment automation with GitOps principles.
 
+![image](https://github.com/user-attachments/assets/a56c8884-85cd-4124-baeb-dd44f4d83005)
+
+
 ## Project Overview
 
 The project consists of:
