@@ -1,0 +1,30 @@
+loki:
+  auth_enabled: false
+  storage:
+    type: filesystem
+  persistence:
+    enabled: true
+    storageClassName: gp2
+    size: 10Gi
+  resources:
+    limits:
+      cpu: 200m
+      memory: 256Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi
+
+promtail:
+  enabled: true
+  config:
+    lokiAddress: http://loki:3100/loki/api/v1/push
+  resources:
+    limits:
+      cpu: 100m
+      memory: 128Mi
+    requests:
+      cpu: 50m
+      memory: 64Mi
+
+grafana:
+  enabled: false  # We're using the Grafana from the Prometheus stack 
